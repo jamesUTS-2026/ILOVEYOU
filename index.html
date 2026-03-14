@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  
+      <style>
+        :root {
+            --joker-green: #2ecc71;  /* Hair / Text */
+            --joker-white: #fdfdfd;  /* Skin */
+            --joker-red: #c0392b;    /* Smile/Lips */
+            --joker-purple: #8e44ad; /* Jacket */
+            --joker-black: #1a1a1a;  /* Eyes/Shadows */
+            --bg: #050505;
+        }
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+        }
+        .joker-face {
+            white-space: pre;
+            font-size: 0.8vw;
+            line-height: 0.7vw;
+            letter-spacing: 1px;
+            animation: glitch 4s infinite;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+        }
+        /* Color Mapping Classes */
+        .g { color: var(--joker-green); text-shadow: 0 0 8px var(--joker-green); }
+        .w { color: var(--joker-white); }
+        .r { color: var(--joker-red); text-shadow: 0 0 10px var(--joker-red); font-weight: bold; }
+        .p { color: var(--joker-purple); }
+        .k { color: var(--joker-black); }
+
+        @media (max-width: 700px) {
+            .joker-face { font-size: 1.5vw; line-height: 1.4vw; }
+        }
+
+        @keyframes glitch {
+            0%, 90%, 100% { transform: translate(0); }
+            91% { transform: translate(-3px, 2px); filter: hue-rotate(90deg); }
+            92% { transform: translate(3px, -2px); filter: contrast(200%); }
+            93% { transform: translate(0); }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="joker-face" id="joker">
+<span class="g">   6  6      666  6   6 6666    6   6  666  6   6   </span>
+<span class="g">   6  6     6   6 6   6 6        6 6  6   6 6   6   </span>
+<span class="g">   6  6     6   6  6 6  666       6   6   6 6   6   </span>
+<span class="g">   6  6     6   6  6 6  6         6   6   6 6   6   </span>
+<span class="g">   6  6666   666    6   6666      6    666   666    </span>
+<span class="g">                                                    </span>
+<span class="g">          66666  666666666  66666          </span>
+<span class="g">       66666666666666666666666666666       </span>
+<span class="g">    66666666666666666666666666666666666    </span>
+<span class="w">   66666</span><span class="k">6666666</span><span class="w">66666666666</span><span class="k">6666666</span><span class="w">66666   </span>
+<span class="w">  6666</span><span class="k">6666    666</span><span class="w">666666666</span><span class="k">6666    6666</span><span class="w">6666  </span>
+<span class="w"> 66666</span><span class="k">666  66  66</span><span class="w">666666666</span><span class="k">66  66  666</span><span class="w">6666 </span>
+<span class="w"> 66666</span><span class="k">6666    666</span><span class="w">666666666</span><span class="k">6666    6666</span><span class="w">6666 </span>
+<span class="w">  666666</span><span class="k">66666666</span><span class="w">6666</span><span class="r">666</span><span class="w">6666</span><span class="k">66666666</span><span class="w">666666  </span>
+<span class="w">   666666666666666</span><span class="r">66666</span><span class="w">666666666666666   </span>
+<span class="w">    666666666666666</span><span class="r">666</span><span class="w">666666666666666    </span>
+<span class="r">     6666666666666666666666666666666     </span>
+<span class="r">    666  66  66  66  66  66  66  666    </span>
+<span class="r">     6666666666666666666666666666666     </span>
+<span class="w">      66666666666666666666666666666      </span>
+<span class="p">     6666666666666666666666666666666     </span>
+<span class="p">    666666666666666666666666666666666    </span>
+    </div>
+</div>
+<script>
+    const joker = document.getElementById('joker');
+    setInterval(() => {
+        if(Math.random() > 0.98) {
+            joker.style.filter = 'invert(100%)';
+            setTimeout(() => { joker.style.filter = 'none'; }, 50);
+        }
+    }, 1000);
+</script>
+    
+      
+<script>
+setTimeout(() => {
+  setInterval(() => {
+    location.reload();
+  }, );
+}, 8000);
+</script>
+  
+  
+  <header>
+  <div class="logo">Logo</div>
+  <div class="nav">Navigation</div>
+  </header>
+  
+  <div class="multibox">
+    <div>1</div><div>1</div><div>1</div><div>1</div>
+      <div>1</div><div>1</div><div>1</div><div>1</div>
+      <div>1</div><div>1</div><div>1</div><div>1</div>
+      <div>1</div><div>1</div><div>1</div><div>1</div>
+  </div>
+  
+  <div class="box">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+  </div>
+  
+  
+  <div class="footer">Footer</div>
+  
+  <script>
+    setInterval(() => {
+      location.reload();
+    }, 00000000000000000000000000000000000000001); // reload every 0.1 seconds
+  </script>
+
+
+////////////
+1000 equavalent 1second
+
+put before sa end 
+  
+  
+  
+</body>
+</html>
